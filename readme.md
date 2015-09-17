@@ -83,7 +83,7 @@ The site should be running at http://localhost:3000
 * I used a json to hold variables that may change quickly, like an API Key, or menu.
 * I used npm and bower to install standard modules quickly.
 * I used Compass to quickly create style sheets and allowed quick compilation in Grunt.
-* I used jquery-builder to a create a smaller version of Jquery, that removed most of what I wasn't using, and focused on what I was using; elements and ajax calls.
+* I used jquery-builder to a create a smaller version of Jquery, that removed most of what I wasn't using, and focused on what I was using; elements and ajax calls. [UPDATE: In the end, I could have removed jquery completely, as I didn't end up doing partial page updating through ajax, and focused on building templates on the server side, still for speed of building (and for proof that I can use the tool), I kept it in.]
 * I ended up using the official node-google api bridge for authorization purposes and included it in my package.json.
 * I used Jade as a templating system, as it is the standard templating system of Express.
 * I used require.js to keep track of the multiple javascripts I used and compiled it using Grunt.
