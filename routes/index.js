@@ -39,7 +39,7 @@ function renderPage(req, res, next){
   var list = yt.search.list({
     'q': paramsKey || search_options[0].query,
     'type': 'video',
-    'part': "snippet",
+    'part': 'snippet',
     'videoEmbeddable': 'true',
     'maxResults': 15
   }, onGotList);
@@ -64,8 +64,8 @@ function renderPage(req, res, next){
        playlist: playlist,
        infolist: infolist,
        paramsKey: paramsKey || search_options[0].query,
-       prev: (res.prevPageToken || ""),
-       next: (res.nextPageToken || "")
+       prev: (res.prevPageToken || ''),
+       next: (res.nextPageToken || '')
       });
   }
 }

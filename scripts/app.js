@@ -1,11 +1,11 @@
 requirejs(['jquery'],
   function ($) {
     'use strict';
-    
+
   /*CLIENT SIDE JAVASCRIPT to be compiled into public/javascripts/main.min.js */
 
     function clearPx(str){
-      return Number(str.replace(/px$/, ""));
+      return Number(str.replace(/px$/, ''));
     }
 
 /*YouTube PLAYER functions */
@@ -13,7 +13,7 @@ requirejs(['jquery'],
     window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
     var tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
+    tag.src = 'https://www.youtube.com/iframe_api';
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -38,22 +38,22 @@ requirejs(['jquery'],
     function switchPlayingStatus(data, selection) {
       switch (data) {
         case YT.PlayerState.PLAYING:
-          selection.setAttribute("class", "playing");
+          selection.setAttribute('class', 'playing');
           break;
         case YT.PlayerState.ENDED:
-          selection.setAttribute("class", "");
+          selection.setAttribute('class', '');
           break;
         case YT.PlayerState.PAUSED:
-          selection.setAttribute("class", "paused");
+          selection.setAttribute('class', 'paused');
           break;
         case YT.PlayerState.BUFFERING:
-          selection.setAttribute("class", "buffering");
+          selection.setAttribute('class', 'buffering');
           break;
         case YT.PlayerState.CUED:
-          selection.setAttribute("class", "cued");
+          selection.setAttribute('class', 'cued');
           break;
         default:
-          selection.setAttribute("class", "");
+          selection.setAttribute('class', '');
       }
     }
 
@@ -85,7 +85,7 @@ requirejs(['jquery'],
        + clearPx(comp_style['padding-bottom'])
        + clearPx(comp_style['margin-top'])
        + clearPx(comp_style['margin-bottom'])
-      ) + "px";
+     ) + 'px';
 
     }
 
@@ -95,11 +95,11 @@ requirejs(['jquery'],
     }
 
 /*Dropdown functions */
-    $('.select_list').on("change", function(){
+    $('.select_list').on('change', function(){
       window.location.href = '/' + this.value;
     });
 
 /* Window Resize */
-    $(window).on("resize", adjustInfo);
+    $(window).on('resize', adjustInfo);
 
 });

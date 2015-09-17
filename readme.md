@@ -99,3 +99,4 @@ The site should be running at http://localhost:3000/
 * There could be some more error checking, but as it stands, the site will just wait for YouTube to respond if it fails.
 * Google searches prefers plus signs instead of spaces, but I wanted to assume + equals space, so I created a function to replace all spaces with pluses before searching. This is only for the dropdown values, if we wanted to modify the predefined searches.
 * I considered the dropdown as only query suggestions, so if the url is modified to include other information, it will use that as the query. (eg. //localhost:3000/family+guy will retrieve family guy)
+* Because Google Authorization wants a trusted site (console.log keeps showing "Untrusted origin: https://node.deepoctop.us" on https://node.deepoctop.us), the videos only load on localhost. (console.log stops after a while on http://localhost:3000).
