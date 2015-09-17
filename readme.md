@@ -94,7 +94,7 @@ The site should be running at http://localhost:3000
 * These decisions allowed me to work fast, test functions, and keep file sizes and server calls in a minimum.
 
 ##"The little things.."
-* I had to get my computer set up with Node, Ruby, Compass and all teh tools locally, as well as a testing server online.
+* I had to get my computer set up with Node, Ruby, Compass and all the tools locally, as well as a testing server online.
 * I had to set up an API Key from Google Developers site, and test to be sure it was working.
 * There could be some more error checking, but as it stands, the site will just wait for YouTube to respond if it fails.
 * Google searches prefers plus signs instead of spaces, but I wanted to assume + equals space, so I created a function to replace all spaces with pluses before searching. This is only for the dropdown values, if we wanted to modify the predefined searches.
