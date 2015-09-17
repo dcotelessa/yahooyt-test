@@ -75,7 +75,7 @@ or simply:
 
 npm start
 ```
-The site should be running at http://localhost:3000/
+The site should be running at http://localhost:3000
 
 ##"Because, Reasons..."
 
