@@ -1,0 +1,40 @@
+{
+  "name": "yahooyt-test",
+  "version": "0.0.1",
+  "description": "Yahoo Test of YouTube Search.",
+  "keywords": [
+    "test"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "install": "./node_modules/.bin/jquery-builder --exclude deprecated,css,dimensions,effects,offset -m > scripts/jquery.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dcotelessa.github.com/yahooyt-test.git"
+  },
+  "homepage": "http://dcotelessa.github.com/yahooyt-test/",
+  "author": "David Cotelessa <david@cotelessa.com>",
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "googleapis": "~2.1.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-compass": "~1.0.3",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "jquery-builder": "~0.7.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

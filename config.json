@@ -1,0 +1,22 @@
+{
+  "api_key": "AIzaSyC0846_6aysMqPDc_7ltqgREfBnZMxNpRA",
+  "search_options": [
+    {
+      "display_name": "Elton John",
+      "query": "elton john",
+      "selected": true
+    },
+    {
+      "display_name": "Stevie Wonder",
+      "query": "stevie wonder"
+    },
+    {
+      "display_name": "Frank Sinatra",
+      "query": "frank sinatra"
+    },
+    {
+      "display_name": "Louis Armstrong",
+      "query": "louis armstrong"
+    }
+  ]
+}

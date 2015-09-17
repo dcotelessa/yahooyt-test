@@ -1,0 +1,25 @@
+{
+  "name": "yahooyt-test",
+  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Dependancies for Yahoo Test",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "test"
+  ],
+  "authors": [
+    "David Cotelessa"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  },
+  "homepage": "http://dcotelessa.github.com/yahooyt-test/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

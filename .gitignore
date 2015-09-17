@@ -1,6 +1,5 @@
 node-modules
 bower_components
-bin
 
 .grunt
 .sass-cache

@@ -1,0 +1,75 @@
+/*mixins*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/*BASE*/
+body {
+  background: black;
+  color: white;
+  font-size: 12pt;
+  font-family:sans-serif;
+  text-align: center;
+}
+
+main {
+  width: 50%;
+  margin-left: 25%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+header {
+  width: 100%;
+}
+
+/*CLASSES*/
+.player {
+      width: 100%;
+}
+.playlist {
+  padding: 0;
+  @include transition(margin-top .5s ease);
+
+  li {
+    list-style: none;
+    display: block;
+    background-color: #999;
+    padding: 1rem;
+    margin: 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    @include transition(background-color .3s ease);
+
+    .title{
+      font-weight: bold;
+    }
+
+    &.playing {
+      background-color: #99CC99;
+    }
+
+    &.buffering {
+      background-color: #666;
+    }
+
+    &.cued {
+      background-color: #9999CC;
+    }
+
+    &.paused {
+      background-color: #CC9999;
+    }
+  }
+}
+
+.playlist_container {
+  overflow-y: hidden;
+  height: 0px;
+  @include transition(height .3s ease);
+}

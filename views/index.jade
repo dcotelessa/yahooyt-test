@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  section(class='select_list_container container')
+    p Select queries from these selections:
+      select(class='select_list')
+        each item, index in search_options
+          if item.selected
+            option(id=index value=item.query selected=true)= item.display_name
+          else
+            option(id=index value=item.query)= item.display_name
+
+  section(class='error_msg container')
+    ul(class='error_msg')
+  section(class='video_container container')
+    iframe(id='player1' class='player' frameborder='0' allowfullscreen='1' title='YouTube video player' width='640' height='390' src='https://www.youtube.com/embed/?enablejsapi=1&origin=http://localhost:3000')
+
+  main(class='main-content content')
+    section(class='playlist_container container')
+      ul(class='playlist')
+        each item in infolist
+          li
+            img(src= item.thumbnail)
+            div(class= 'title')= item.title
+            div(class= 'description')= item.description
+            a(href='https://www.youtube.com/channel/' + item.channelId target='_blank')
+              div(class= 'channelTitle')= 'Channel Title: ' + item.channelTitle
+            div(class= 'publishedAt')= 'published At: ' + prettyDate(item.publishedAt)

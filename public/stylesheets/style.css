@@ -1,0 +1,89 @@
+/*mixins*/
+/*BASE*/
+/* line 11, ../../sass/style.scss */
+body {
+  background: black;
+  color: white;
+  font-size: 12pt;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* line 19, ../../sass/style.scss */
+main {
+  width: 50%;
+  margin-left: 25%;
+}
+@media (max-width: 1024px) {
+  /* line 19, ../../sass/style.scss */
+  main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* line 28, ../../sass/style.scss */
+header {
+  width: 100%;
+}
+
+/*CLASSES*/
+/* line 33, ../../sass/style.scss */
+.player {
+  width: 100%;
+}
+
+/* line 36, ../../sass/style.scss */
+.playlist {
+  padding: 0;
+  -webkit-transition: margin-top 0.5s ease;
+  -moz-transition: margin-top 0.5s ease;
+  -ms-transition: margin-top 0.5s ease;
+  -o-transition: margin-top 0.5s ease;
+  transition: margin-top 0.5s ease;
+}
+/* line 40, ../../sass/style.scss */
+.playlist li {
+  list-style: none;
+  display: block;
+  background-color: #999;
+  padding: 1rem;
+  margin: 0.5rem 0 0.5rem;
+  border-radius: 1rem;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 49, ../../sass/style.scss */
+.playlist li .title {
+  font-weight: bold;
+}
+/* line 53, ../../sass/style.scss */
+.playlist li.playing {
+  background-color: #99CC99;
+}
+/* line 57, ../../sass/style.scss */
+.playlist li.buffering {
+  background-color: #666;
+}
+/* line 61, ../../sass/style.scss */
+.playlist li.cued {
+  background-color: #9999CC;
+}
+/* line 65, ../../sass/style.scss */
+.playlist li.paused {
+  background-color: #CC9999;
+}
+
+/* line 71, ../../sass/style.scss */
+.playlist_container {
+  overflow-y: hidden;
+  height: 0px;
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
